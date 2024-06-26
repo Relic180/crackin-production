@@ -1,1 +1,153 @@
-<h1>Testing deployt mechanism</h1>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Crackin.com - Fear no Tech</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+      /* reset */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: unset;
+      }
+
+      button,
+      input,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      img,
+      picture,
+      svg,
+      canvas {
+        display: block;
+        max-inline-size: 100%;
+        block-size: auto;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* App_core */
+      body {
+        min-height: 100vh;
+        // padding-top: coreStyle.$header-height;
+      }
+
+      #pageWrapper {
+        min-height: inherit;
+      }
+
+      #routeWrapper {
+        min-height: inherit; // Remove headerheight from this post-comingsoon page
+        overflow: hidden;
+      }
+
+      /* Maintenance_route */
+      #MaintenanceRoute {
+        position: relative;
+        height: 100vh;
+        background: url("/img/comingsoon_bg.jpg") repeat-x top center;
+        padding: 0 20px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .logo-box {
+          img {
+            margin: 0 auto;
+          }
+
+          .coming-soon {
+            color: #3e3e3e;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            text-align: center;
+            letter-spacing: 18px;
+            margin-bottom: 80px;
+            margin-right: -24px;
+            white-space: nowrap;
+
+            @media screen and (max-width: 600px) {
+              font-size: 20px;
+              letter-spacing: 10px;
+            }
+          }
+
+          .link {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+
+            a {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 16px;
+              text-decoration: none;
+              transition: color 0.3s;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pageWrapper">
+      <div id="routeWrapper">
+        <div id="MaintenanceRoute">
+          <div class="logo-box">
+            <p class="coming-soon">coming soon</p>
+            <img src="/img/comingsoon_logo.png" alt="" height="121" />
+            <p class="link">
+              <a href="https://www.linkedin.com/in/crackinstudios/">
+                linkedin.com/in/crackinstudios/
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
